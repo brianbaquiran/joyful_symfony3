@@ -14,11 +14,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class GenusController extends Controller
 {
     /**
-     * @Route("/genus/{genusName2}")
+     * @Route("/genus/{genusName}")
      *
      */
     public function showAction($genusName)
     {
+        dump($genusName);
         $notes = [
             'Octopus asked me a riddle, outsmarted me',
             'I counted 8 legs... as they wrapped around me',
